@@ -2121,7 +2121,7 @@ end
 local function credits()
 
     Developers:Cheat("Label","📝 Scripted by: Friez Scripts ")        
-    Developers:Cheat("Label","📐 UI By: Arpon V2")    
+    Developers:Cheat("Label","📐 UI By: Friez Scripts")    
     Developers:Cheat("Label","🔧 To toggle the script press \" P \"")   
     Developers:Cheat("Button","🔗 Discord Invite", function()
         setclipboard("https://discord.gg/Yht2Ym7NVS")
@@ -3290,9 +3290,9 @@ function autoload()
     pcall(function()
         local exec = tostring(identifyexecutor())
         if exec == "Synapse X" and Settings.AutoLoadScript then
-            syn.queue_on_teleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/SeemsGoodGuys/Anime-Adventures/main/Adventures"))();")
+            syn.queue_on_teleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/SeemsGoodGuys/Anime-Adventures/main/Adventures"))()")
         elseif exec ~= "Synapse X" and Settings.AutoLoadScript then
-            queue_on_teleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/SeemsGoodGuys/Anime-Adventures/main/Adventures"))();")
+            queue_on_teleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/SeemsGoodGuys/Anime-Adventures/main/Adventures"))()")
         end
     end)
 end
@@ -3302,7 +3302,7 @@ if Settings.AutoLoadScript then
 end
 
 function autoload2()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SeemsGoodGuys/Anime-Adventures/main/Adventures"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SeemsGoodGuys/Anime-Adventures/main/Adventures"))()
 end
 
 if Settings.refarmc then
